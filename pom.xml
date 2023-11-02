@@ -20,8 +20,7 @@
 		<!-- JaCoCo Properties -->
 		<jacoco.version>0.8.7</jacoco.version>
 		<sonar.coverage.jacoco.xmlReportPaths>
-			${project.basedir}/report-aggregate/target/site/
-			jacoco-aggregate/jacoco.xml
+			../app-it/target/site/jacoco-aggregate/jacoco.xml
 		</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.language>java</sonar.language>
 	</properties>
