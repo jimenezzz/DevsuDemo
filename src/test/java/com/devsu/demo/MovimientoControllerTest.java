@@ -2,9 +2,7 @@ package com.devsu.demo;
 
 import com.devsu.demo.controller.ClienteController;
 import com.devsu.demo.controller.MovimientoController;
-import com.devsu.demo.model.Cliente;
 import com.devsu.demo.model.Movimiento;
-import com.devsu.demo.service.ClienteService;
 import com.devsu.demo.service.MovimientoService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
