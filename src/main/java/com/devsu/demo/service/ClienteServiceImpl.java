@@ -43,6 +43,19 @@ public class ClienteServiceImpl implements ClienteService{
         return null; // Manejar si la cliente no existe
     }
 
+    public Cliente updateCliente2(Long id, Cliente clienteDetails) {
+        Optional<Cliente> clienteOptional = clienteRepository.findById(id);
+
+        if (clienteOptional.isPresent()) {
+            Cliente cliente = clienteOptional.get();
+            // Actualizar los campos necesarios de acuerdo a clienteDetails
+            clienteDetails.setId(id);
+            return clienteRepository.save(clienteDetails);
+        }
+
+        return null; // Manejar si la cliente no existe
+    }
+
     @Override
     public void deleteCliente(Long id) {
         clienteRepository.deleteById(id);
